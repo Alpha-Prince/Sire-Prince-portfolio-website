@@ -655,6 +655,9 @@ footer a i:active{
   .home-text{
   margin: 10px 10px 0px;
   }
+  .welcome-text{
+    text-align: left;
+  }
   .welcome-text span{
  display:block;
  font-weight: 600;
