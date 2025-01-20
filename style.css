@@ -735,15 +735,15 @@ footer a i:active{
   .social_media{
     margin-right: 0;
     margin: 0;
-    width: 100%;
+    width: 90%;
     flex-direction: row;
     padding: 5px;
   }
   .social_media a div i{
-   font-size: 15px;
+   font-size: 12px;
   }
   .social_media a div p{
-    font-size: 12px;
+    font-size: 8px;
   }
   footer{
     padding: 0px 5px 0px;
