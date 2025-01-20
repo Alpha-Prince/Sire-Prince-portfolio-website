@@ -9,20 +9,20 @@
   padding: 0px;
   outline: none;
   scroll-behavior: smooth;
-  transition-duration: 1s;
 }
 body{
   background-color:var(--deep-color);
   color: #626262;
+  overflow-x: hidden;
 }
 :root{
-  --deep-color:#fff;
+  --deep-color:#e7e7e7;
   --light-color:#f1f1f1;
   --main-color:#ff2626;
 }
 .dark-theme{
-  --deep-color:#000;
-  --light-color:#0a0a0a;
+  --deep-color:#313131;
+  --light-color:#555454;
 }
 
 .navbar{
@@ -93,12 +93,12 @@ body{
 } 
 
 .home{
-  width:100%;
+  width:100vw;
   min-height: 100vh;
-  background-image: url(./catcyber.jpg);
+  background-image: url(images/catcyber.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size:cover;
   
 }
 .home-text{
@@ -110,7 +110,8 @@ body{
   font-size:40px;
   letter-spacing: 3px;
   text-align: center;
-  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
   
 }
 .home-text  p{
@@ -134,14 +135,12 @@ body{
   margin-left:  300px; 
   text-align: center;
   cursor: pointer;
+  transition: 1s;
 }
 .home-text .btn:hover{
   background-color:rgb(255, 255, 255); ;
   color:var(--main-color);
 }
-
-
-
 
 .sub_header{
   font-size: 30px;
@@ -176,6 +175,7 @@ body{
   box-shadow: 2px 2px 12px;
   padding: 0px 10px 10px;
   position: relative;
+  transition: 1s;
 }
 .Portfolio:hover{
   transform: scale(1.1);
@@ -227,7 +227,7 @@ text-align: left;
 }
 .professional-info p{
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 20px;
   letter-spacing:1px;
   font-family:Arial, Helvetica, sans-serif, Georgia, Times, 'Times New Roman', serif;
@@ -291,10 +291,10 @@ text-align: left;
   width: 100%;
   margin-bottom: 20px;
   font-size: 20px;
-  color: #9a9a9a;
+  color: #4d4c4c;
  }
 .personal-info div span{
-  color: #cecece;
+  color: #707070;
 }
  .ask-question{
   display: flex;
@@ -305,16 +305,19 @@ text-align: left;
   color:rgb(60, 89, 255);
   font-size: 30px;
   letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  .ask-question .btn{
   background-color:rgb(255, 255, 255);
   color:var(--main-color);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 7px;
   font-size: 12px;
   font-weight: 700;
   text-align: center;
   cursor: pointer;
+  border: 1px solid rgb(60, 89, 255);;
+  transition: 1s;
  }
  .ask-question .btn:hover{
   background-color:rgb(40, 140, 255);
@@ -411,23 +414,23 @@ font-size: 20px;
 resize: none;
 width: 100%;
 height: 120px;
-padding: 20px;
+padding: 10px 20px;
 font-size: 15px;
 letter-spacing: 1px;
 font-weight: 500;
 align-items: center;
 margin-bottom: 30px;
-color: #fff;
-background-color:var(--light-color);
+color: #242323;
 }
 .email-container form input{
   width: 300px;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color:var(--light-color);
   padding-left: 20px;
   letter-spacing: 2px;
   font-size: 15px;
+  border: 1px solid rgb(252, 224, 224);
 }
 form .second-col .btn{
   width: 100px;
@@ -440,6 +443,7 @@ form .second-col .btn{
   text-align: center;
   cursor: pointer;
   letter-spacing: 1px;
+  transition: 1s;
 }
 form .second-col .btn:hover{
   background-color:var(--main-color); 
@@ -462,6 +466,7 @@ footer{
 footer h2 {
   font-size:13px;
   color:white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 footer a{
   color:var(--main-color);
