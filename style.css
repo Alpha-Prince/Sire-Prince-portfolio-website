@@ -734,6 +734,7 @@ footer a i:active{
   }
 
   .social_media{
+    width: 100%;
     flex-direction: row;
     padding: 5px;
   }
