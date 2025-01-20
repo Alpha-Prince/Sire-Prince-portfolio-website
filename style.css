@@ -730,10 +730,11 @@ footer a i:active{
   }
 
   .social_media{
+    margin-right: 0;
+    margin: 0;
     width: 100%;
     flex-direction: row;
     padding: 5px;
-    display: none;
   }
   .social_media a div i{
    font-size: 15px;
