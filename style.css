@@ -337,11 +337,9 @@ text-align: left;
   padding: 30px 30px 0px;
 }
 .social_media{ 
-  flex-basis: 30%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 30px;
   justify-content: space-between;
  
 
