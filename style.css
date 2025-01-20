@@ -342,7 +342,7 @@ text-align: left;
   align-items: center;
   flex-direction: column;
   gap: 30px;
-  justify-content: space-around;
+  justify-content: space-between;
  
 
 }
@@ -355,8 +355,6 @@ text-align: left;
 }
 
 .social_media a i{
- 
-  margin-right:5px;
   display: flex;
   align-items: center;
   gap: 10px;
