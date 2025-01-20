@@ -733,6 +733,7 @@ footer a i:active{
     width: 100%;
     flex-direction: row;
     padding: 5px;
+    display: none;
   }
   .social_media a div i{
    font-size: 15px;
