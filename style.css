@@ -96,7 +96,7 @@ body{
 .home{
   width:100vw;
   min-height: 100vh;
-  background-image: url(catcyber.jpg);
+  background-image: url(images/catcyber.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -109,7 +109,7 @@ body{
   padding: 20px;
 }
 .welcome-text{
-  font-size:40px;
+  font-size:30px;
   letter-spacing: 3px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -118,7 +118,7 @@ body{
 }
 .home-text  p{
   margin: 50px 0px 20px;
-  font-size: 23px;
+  font-size: 18px;
   color: #c9c9c9;
   text-align: center;
 }
@@ -172,7 +172,7 @@ body{
 
 .Portfolio{
   width:230px;
-  height: 330px;
+  height: auto;
   background-color:var(--light-color);
   margin: 30px;
   box-shadow: 2px 2px 12px;
@@ -197,11 +197,11 @@ text-align:left;
 .portfolio_link a{
 color:rgb(60, 89, 255);
 font-weight:700;
-position: absolute;
-bottom:10px;
-right: 20px;
+position: relative;
+left: 30px;
+top: 10px;
 transition: color 0.5s ease-in-out;
-margin: 7px;
+
 }
 .portfolio_link a:hover{
   color:var(--main-color);
@@ -336,8 +336,8 @@ text-align: left;
  }
  .personal-info div{
   width: 100%;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 22px;
+  font-size: 18px;
   color: #4d4c4c;
  }
 .personal-info div span{
@@ -497,7 +497,7 @@ footer{
   width:100%;
   height:  50px;
   padding: 0px 50px 0px;
-  background-color: rgb(148, 61, 61);
+  background-color: rgb(37, 37, 37);
   color:white;
   letter-spacing: 2px;
   display: flex;
@@ -508,14 +508,15 @@ footer{
 }
 
 footer h2 {
-  font-size:13px;
-  color:white;
+  font-size:10px;
+  color:rgb(255, 255, 255);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
 }
 footer a{
   color:var(--main-color);
   padding:10px;
-  border-radius:7px;
+  height: 100%;
+  border-radius:2px;
   background-color:white;
 }
 footer a i{
@@ -753,7 +754,7 @@ footer a i:active{
       height: 270px;
       background-color:var(--light-color);
       margin: 30px;
-      box-shadow: 2px 2px 12px;
+      box-shadow: 0px 0px 0px;
       padding: 0px 10px 10px;
       position: relative;
       transition: 1s;
@@ -763,6 +764,7 @@ footer a i:active{
 }
 .mini-portfolio{
   margin-right: 65px;
+  box-shadow: 0px 0px 0px;
 }
 .mini-portfolio-container::-webkit-scrollbar{
   display: none;
@@ -781,7 +783,7 @@ footer a i:active{
   }
   .professional-info h2{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
   }
   .professional-info p{
     font-size: 12px;
@@ -805,12 +807,20 @@ footer a i:active{
     padding: 5px;
   }
  .ask-question{
-  
+  align-items: center;
   justify-content:space-evenly;
 }
   .contact-container{
     flex-direction: column-reverse;
     padding: 10px;
+  }
+  .bar{
+    height: 16px;
+    background-color:#d3d3d3;
+  }
+  .persent{
+    height: 16px;
+  
   }
   .email{
     width: 100%;
@@ -842,12 +852,12 @@ footer a i:active{
   
     }
   .social_media a div i{
-   font-size: 15px;     
+   font-size: 10px;     
    margin-right:5px;
-   gap: 10px;
+   gap: 0px;
   }
   .social_media a div p{
-    font-size: 12px;
+    font-size: 10px;
   }
   footer{
     padding: 0px 5px 0px;
