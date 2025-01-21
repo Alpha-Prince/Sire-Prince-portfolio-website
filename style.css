@@ -21,15 +21,15 @@ body{
   --main-color:#ff2626;
 }
 .dark-theme{
-  --deep-color:#313131;
-  --light-color:#555454;
+  --deep-color:#0c0c0c;
+  --light-color:#161616;
 }
-
+  
 .navbar{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:60px;
+  padding:20px;
   height:120px;
   width:100%;
   position: static;
@@ -37,6 +37,7 @@ body{
   z-index: 10;
   display: flex;
   align-items: center;
+  
 
 }
  .logo{
@@ -74,7 +75,7 @@ body{
 .humburger{
   width:30px;
   height: 30px;
-  transition: all 3s ease-in-out;
+  transition: 3s;
   position: fixed;
   top: 20px;
   right: 30px;
@@ -95,12 +96,13 @@ body{
 .home{
   width:100vw;
   min-height: 100vh;
-  background-image: url(catcyber.jpg);
+  background-image: url(images/catcyber.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   
 }
+
 .home-text{
   margin: 130px 30px;
   position: relative;
@@ -156,6 +158,7 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 .Portfolios_container{
   padding: 2px;
   width: 100%;
@@ -168,8 +171,8 @@ body{
 }
 
 .Portfolio{
-  width:250px;
-  height: 350px;
+  width:230px;
+  height: 330px;
   background-color:var(--light-color);
   margin: 30px;
   box-shadow: 2px 2px 12px;
@@ -198,11 +201,55 @@ position: absolute;
 bottom:10px;
 right: 20px;
 transition: color 0.5s ease-in-out;
-padding: 5px;
+margin: 7px;
 }
 .portfolio_link a:hover{
   color:var(--main-color);
 
+}
+.mini-portfolio-container{
+  width: 100%;
+  height: auto;
+  background-color: var(--deep-color);
+  padding: 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px #5a5a5ad0;
+}
+.category{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.mini-portfolio-container .mini-portfolio-group{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.mini-portfolio{
+  width: 220px;
+  background: white;
+  padding: 10px;
+  display:flex;
+  justify-content: space-between;
+  border: none;
+  box-shadow: 2px 2px 4px;
+  background-color:var(--light-color);
+  transition: 0.5s ease-out;
+}
+.mini-portfolio:hover{
+  transform: scale(1.1);
+}
+.mini-portfolio img{
+  width: 100px;
+  height: 130px;
+  margin-right: 7px;
+}
+.mini-portfolio .text{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .about{
   min-height:100vh;
@@ -337,32 +384,33 @@ text-align: left;
   padding: 30px 30px 0px;
 }
 .social_media{ 
+  flex-basis: 30%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
- 
-
+  gap: 20px;
+  justify-content: space-around;
 }
 .social_media a div{
-font-size: 25px;
-padding: 20px;
+font-size: 20px;
+padding: 30px;
 font-weight: 500;
 display: flex;
 text-align: left;
 }
 
 .social_media a i{
+  margin-right:5px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
  
 }
 .social_media a p{
-font-family: cursive;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 letter-spacing: 2px;
 font-weight: 500;
-font-size: 20px;
+font-size: 18px;
 }
 .facebook{
   color:#2c74f8;
@@ -417,6 +465,7 @@ font-weight: 500;
 align-items: center;
 margin-bottom: 30px;
 color: #242323;
+background-color:var(--light-color);
 }
 .email-container form input{
   width: 300px;
@@ -426,7 +475,6 @@ color: #242323;
   padding-left: 20px;
   letter-spacing: 2px;
   font-size: 15px;
-  border: 1px solid rgb(252, 224, 224);
 }
 form .second-col .btn{
   width: 100px;
@@ -462,7 +510,7 @@ footer{
 footer h2 {
   font-size:13px;
   color:white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
 }
 footer a{
   color:var(--main-color);
@@ -488,6 +536,7 @@ footer a i:active{
   border-bottom: 1px solid var(--main-color);
   border-left: 1px solid var(--main-color);
   z-index: 10;
+  transition: 1s;
 }
 .cn-container.active{
   right: 0;
@@ -500,7 +549,7 @@ footer a i:active{
   position: absolute;
   top:30px;
   left: 30px;
-  transition:  all  0.5s;
+  transition: 1s;
  }
  .cn-mode span{
   background-color: #fff;
@@ -559,6 +608,7 @@ footer a i:active{
   left: 30px;
   transition:  all  0.5s;
   z-index: 10;
+  transition: 0.2s;
  }
 
  .mode span{
@@ -620,6 +670,7 @@ footer a i:active{
     align-items: center;
     justify-content: center;
     z-index: 10;
+    transition: 1s;
   }
 
   .nav-menu ul{
@@ -652,8 +703,22 @@ footer a i:active{
     left: 10px;
     top: 10px;
   }
+  .filter{
+    width: 100%;
+    height: 100vh;
+  background: linear-gradient(to top,hsla(0, 0%, 11%, 0.781) 5%,transparent,transparent);
+
+  }
   .home-text{
-  margin: 10px 10px 0px;
+  margin: 10px 20px 0px;
+  
+  }
+  .home-text p{
+    color: hsla(0, 0%, 93%, 0.836);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    display: block;
   }
   .welcome-text{
     text-align: left;
@@ -668,7 +733,39 @@ footer a i:active{
     margin-left: 30px;
   }
   .Portfolios_container{
-    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 50px;
+    font-size: 12px;
+    overflow-x: scroll;
+    
+  }
+  .Portfolio img{
+    width:90%;
+    min-height: 130px;
+    position:relative;
+    top:-30px;
+  
+  }
+  .Portfolios_container::-webkit-scrollbar{
+    display: none;
+    }
+    .Portfolio{
+      width:180px;
+      height: 270px;
+      background-color:var(--light-color);
+      margin: 30px;
+      box-shadow: 2px 2px 12px;
+      padding: 0px 10px 10px;
+      position: relative;
+      transition: 1s;
+    }
+.mini-portfolio-container{
+  overflow-x: scroll;
+}
+.mini-portfolio{
+  margin-right: 65px;
+}
+.mini-portfolio-container::-webkit-scrollbar{
+  display: none;
   }
   .about{
     padding: 10px;
@@ -732,18 +829,25 @@ footer a i:active{
     width: 100%;
   }
 
-  .social_media{
-    margin-right: 0;
-    margin: 0;
-    width: 90%;
+  .social_media {
     flex-direction: row;
     padding: 5px;
+    font-size: 20px;
+    padding: 10px;
+    
   }
+  .social_media a div{
+    padding: 10px;
+    font-weight: 500;
+  
+    }
   .social_media a div i{
-   font-size: 12px;
+   font-size: 15px;     
+   margin-right:5px;
+   gap: 10px;
   }
   .social_media a div p{
-    font-size: 8px;
+    font-size: 12px;
   }
   footer{
     padding: 0px 5px 0px;
@@ -755,4 +859,6 @@ footer a i:active{
   }
 
 
+    
+    
 }
