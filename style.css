@@ -96,7 +96,7 @@ body{
 .home{
   width:100vw;
   min-height: 100vh;
-  background-image: url(catcyber.jpg);
+  background-image: url(images/catcyber.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -251,6 +251,8 @@ transition: color 0.5s ease-in-out;
 }
 .mini-portfolio .text{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 15px;
+  font-weight: 400;
 }
 .about{
   min-height:100vh;
