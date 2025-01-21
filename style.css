@@ -762,6 +762,10 @@ footer a i:active{
       position: relative;
       transition: 1s;
     }
+    .mini-portfolio-container{
+      padding: 30px 0px 30px;
+     
+    }
 .mini-portfolio-group{
   overflow-x: scroll;
 }
