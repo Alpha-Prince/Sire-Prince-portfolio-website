@@ -85,11 +85,11 @@ form button{
     }
     form{
         width: 60%;
-        margin: 0px 20px 0px;
         height: 35px;
         background:rgb(228, 228, 253);
         display: flex;
         align-items: center;
+        justify-content: center;
         border-radius: 48px;
     }
     form input{
