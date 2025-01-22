@@ -394,6 +394,46 @@ margin-right: 10px;
 }
 
 @media (max-width:500px){
+
+
+    nav{
+        padding: 10px 2%;
+        justify-content: space-between;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        position: sticky;
+        background: #fff;
+        top: 0;
+        z-index:10;
+    }
+    .nav-right i{
+        width: 16px;
+        margin-right: 5px;
+    }
+    
+    .nav-right .user{
+         width: 28px;
+         height: 28px;
+    }
+    
+    .nav-left .menu-icon{
+    width: 18px;
+    margin-right: 5px;
+    }
+    .nav-left .logo{
+        width: 80px;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+    }
+    .nav-left .logo i{
+    color: red;
+    font-size: 16px;
+    }
+    
+
+
+
+
     .play-video{
     flex-basis: 100%;
     }
