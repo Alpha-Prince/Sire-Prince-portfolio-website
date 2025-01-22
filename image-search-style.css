@@ -12,7 +12,7 @@ h1{
     text-align: center;
     margin: 100px auto 50px;
     font-weight: 600;
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 form{
     width: 90%;
@@ -77,6 +77,44 @@ form button{
 
 
 @media screen and (max-width: 768px){
+    h1{
+        text-align: center;
+        margin: 70px auto 40px;
+        font-weight: 600;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    form{
+        width: 70%;
+        margin: auto;
+        height: 35px;
+        background:rgb(228, 228, 253);
+        display: flex;
+        align-items: center;
+        border-radius: 48px;
+    }
+    form input{
+        flex: 1;
+        height: 100%;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        padding: 10px;
+    }
+    form button{
+        padding: 0 40px;
+        height: 100%;
+        background:#ff3929 ;
+        color: white;
+        font-size: 18px;
+        border: 0;
+        outline: 0;
+        border-top-right-radius: 37px;
+        border-bottom-right-radius: 38px;
+        cursor: pointer;
+    }
+
     #search-result{
         grid-template-columns: 1fr 1fr;
     }
