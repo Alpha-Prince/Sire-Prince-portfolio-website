@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/2ee0d60911.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="music-player-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            
+            <div class="nav">
+                <div class="bar">
+                    <i class="fa-regular fa-less-than"></i>
+                </div>
+                <div class="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="img"><img src="files/sire.png" alt=""></div>
+            <h1>Cheque-Zoom</h1>
+            <p>Cheque Razor EP</p>
+            <audio controls width id="song">
+                <source src="files/Cheque-Zoom-(JustNaija.com).mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctricon"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+        </div>
+    </div>
+
+<script src="music-player-script.js">
+</script>
+</body>
+</html>
