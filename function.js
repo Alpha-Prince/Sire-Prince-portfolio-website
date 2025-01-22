@@ -1,56 +1,37 @@
-let humburgur = document.querySelector('.humburger');
-let navMenu = document.querySelector('.nav-menu');
-humburgur.addEventListener('click', () => {
-    humburgur.classList.toggle("active");
-    navMenu.classList.toggle("active");
+let settingsMenu = document.querySelector(".settings-menu");
+let darkBtn = document.getElementById("dark-btn");
+
+
+function settingsMenuToggle(){
+    settingsMenu.classList.toggle("settings-menu-height");
 }
-)
 
-document.querySelectorAll('.nav_item').forEach(n => n.addEventListener('click', ()=>{
-    humburgur.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
-
-document.querySelectorAll('.nav_item').forEach(n => n.addEventListener('click', ()=>{
-    humburgur.classList.remove("active");
-    navMenu.classList.remove("active");
-}))
-/* ------------------------control container(cn)------------------------ */
-let cnHumburgur = document.querySelector('.cn-humburger');
-let cnContainer = document.querySelector('.cn-container');
-cnHumburgur.addEventListener('click', () => {
-    cnHumburgur.classList.toggle("active");
-    cnContainer.classList.toggle("active");
-}
-)
-
-/* ------------------------dark mode------------------------ */
-let cnmode = document.querySelector('.cn-mode');
- cnmode.onclick = function(){
-    cnmode.classList.toggle("dark-mode-on");
+darkBtn.onclick = function (){
+    darkBtn.classList.toggle("dark-btn-on");
     document.body.classList.toggle("dark-theme");
-    cnContainer.classList.toggle("active");
-    cnHumburgur.classList.toggle("active");
+
+     
+if(localStorage.getItem("theme") =="light"){
+    localStorage.setItem("theme", "dark");
+}else{
+    localStorage.setItem("theme", "light");
 }
 
-let mode = document.querySelector('.mode');
- mode.onclick = function(){
-    mode.classList.toggle("dark-mode-on");
-    document.body.classList.toggle("dark-theme");
-    navMenu.classList.remove("active");
-    humburgur.classList.remove("active");
 }
 
 
 
-
-
-
-
-
-
-
-
+if(localStorage.getItem("theme") == "light"){
+    darkBtn.classList.remove("dark-btn-on");
+    document.body.classList.remove("dark-theme")
+}
+else if(localStorage.getItem("theme") == "dark"){
+    darkBtn.classList.add("dark-btn-on");
+    document.body.classList.add("dark-theme")
+}
+else{
+localStorage.setItem("theme", "dark");
+}
 
 
 
