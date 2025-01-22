@@ -232,15 +232,20 @@ body{
   justify-content: space-between;
   padding: 20px;
   width: 100%;
+  
+}
+ .mini-portfolio-group a{
+  text-decoration: none;
+  color: #181818e3;
+  
 }
 .mini-portfolio{
   width: 250px;
-  background: white;
   padding: 10px;
   display:flex;
   justify-content: space-between;
   border: none;
-  box-shadow: 2px 2px 4px;
+  box-shadow: 2px 2px 4px rgba(39, 39, 39, 0.795);
   background-color:var(--light-color);
   transition: 0.5s ease-out;
 }
