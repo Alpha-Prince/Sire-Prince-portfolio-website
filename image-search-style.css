@@ -100,7 +100,7 @@ form button{
         background: transparent;
         color: rgb(0, 0, 0);
         font-size: 16px;
-        padding: 0 10px;
+        padding-left: 10px;
     }
     form button{
         padding: 0 20px;
