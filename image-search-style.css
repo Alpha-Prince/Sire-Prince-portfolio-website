@@ -84,7 +84,7 @@ form button{
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     form{
-        width: 70%;
+        width: 90%;
         height: 35px;
         background:rgb(228, 228, 253);
         display: flex;
@@ -100,7 +100,7 @@ form button{
         background: transparent;
         color: rgb(0, 0, 0);
         font-size: 16px;
-        padding-left: 10px;
+        padding: 0 10px;
     }
     form button{
         padding: 0 20px;
