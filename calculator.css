@@ -82,9 +82,9 @@ form input.operator{
   padding: 0px 30px;
     }
     .calculator{
+      width: 330px;
     }
     .calculator form input{
-
         height:50px;
         width:50px;
         font-size: 18px;
