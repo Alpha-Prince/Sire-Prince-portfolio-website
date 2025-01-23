@@ -117,10 +117,32 @@ select{
         font-size: 25px;
     }
     textarea{
-        width: 70%;
-        height: 170px;
+        width: 90%;
+        height: 140px;
     }
-    .row{
-        width: 70%;
+
+    .row{  
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
     }
+    
+    button{
+        font-size: 14px;
+        padding: 8px 12px;
+        letter-spacing: 1px;
+        border-radius: 25px;
+       
+    }
+    
+}
+select{
+    color: #fff;
+    background: #403d84;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 25px;
+    font-size: 12px;
 }
