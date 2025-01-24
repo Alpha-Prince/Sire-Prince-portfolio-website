@@ -559,7 +559,6 @@ footer a i:active{
   color:rgb(0, 162, 255);
   background-color: white;
 }
-
 .cn-container{
   background-color:var(--light-color);
   position: fixed;
@@ -902,6 +901,5 @@ footer a i:active{
   }
 
 
-    
     
 }
