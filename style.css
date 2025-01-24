@@ -821,7 +821,11 @@ footer a i:active{
     font-size: 12px;
     margin: 0px 10px;
   }
-
+  .professional-info .multiple-text{
+    color:  var(--main-color);
+    font-size: 14px;
+  
+  }
   .personal-info{
   flex-basis: 100%;
    padding: 10px;
