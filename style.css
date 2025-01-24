@@ -526,35 +526,31 @@ form .second-col .btn:hover{
   background-color:var(--main-color); 
   color:white;
 }
-footer{
+.footer-container{
   width: 100%;
-  height: 30px;
-  background-color:rgba(27, 27, 27, 0.877);
-  color: #ffffff;
+  height: 40px;
+  background-color:rgba(19, 19, 19, 0.877);
   display: flex;
+  justify-content: center;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif Arial, Helvetica, sans-serif, sans-serif;
-  position: absolute;
+  position: relative;
+  padding: 10px 30px;
   bottom: 0px;
 }
-footer h2{
-  letter-spacing: 1px;
-  font-size: 15px;
-  
+.footer-container h2{
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 2px;
 }
-footer a{
-  font-size: 15px;
-  color: var(--main-color);
-  text-decoration: none;
-  font-weight: 500;
-  padding: 5px;
+.footer-container a{
+  color:var(--main-color);
+  font-size: 12px;
+  font-weight: 300;
   background: white;
-  border-radius: 2px;
-  height: 30px;
-  text-align: center;
-  cursor: pointer;
+  padding: 5px;
+  border-radius: 3px;
 }
 .cn-container{
   background-color:var(--light-color);
@@ -893,24 +889,17 @@ footer a{
     font-size: 10px;
   }
 
-
-  footer{
-    width: 100%;
-    height: 25px;
+  .footer-container{
+    height: 30px;
+    padding: 5px 15px;
   }
-  footer h2{
+  .footer-container h2{
+    color: #ffffff;
+    font-size: 8px;
     letter-spacing: 1px;
-    font-size: 8px;
-    
   }
-  footer a{
-    margin-right: 20px;
+  .footer-container a{
+    color:var(--main-color);
     font-size: 8px;
-    font-weight: 500;
-    padding: 2px;
-    background: white;
-    border-radius: 2px;
-    height: 20px;
-
   }
 }
