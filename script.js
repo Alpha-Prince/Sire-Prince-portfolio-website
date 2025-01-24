@@ -51,9 +51,9 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal( '.home-text, .Portfolios_container, .mini-portfolio-group, .email-container, .social_media', { origin: 'bottom'});
-ScrollReveal().reveal( '.logo,.about-container, .email btn', { origin: 'left'});
+ScrollReveal().reveal( '.logo,.about-container, .email btn, footer h2', { origin: 'left'});
 ScrollReveal().reveal( '.sub_header', { origin: 'top'});
-ScrollReveal().reveal( '.nav-mmenu, .personal-info, .email h2', { origin: 'right'});
+ScrollReveal().reveal( '.nav-mmenu, .personal-info, .email h2, footer a', { origin: 'right'});
 
 
 
