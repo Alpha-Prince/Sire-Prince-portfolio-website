@@ -42,17 +42,32 @@ let mode = document.querySelector('.mode');
 }
 
 
+//============================== scroll reveal ==============================//
+ScrollReveal({ 
+    reset: true,
+    distance: '50px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal( '.home-text, .Portfolios_container, .mini-portfolio-group, .email-container, .social_media', { origin: 'bottom'});
+ScrollReveal().reveal( '.logo,.about-container, .email btn, footer h2', { origin: 'left'});
+ScrollReveal().reveal( '.sub_header', { origin: 'top'});
+ScrollReveal().reveal( '.nav-mmenu, .personal-info, .email h2, footer a', { origin: 'right'});
 
 
 
 
 
+//============================== typing  js ==============================//
 
 
-
-
-
-
-
+const typed = new Typed('.multiple-text', {
+    strings: ['Web Developer', 'Graphic Designer', 'Freelancer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
 
 

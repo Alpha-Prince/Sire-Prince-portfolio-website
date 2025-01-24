@@ -37,8 +37,6 @@ body{
   z-index: 10;
   display: flex;
   align-items: center;
-  
-
 }
  .logo{
     font-family:cursive;
@@ -65,7 +63,7 @@ body{
 }
 .nav-menu ul a{
  color: #3d1bff;
- transition-duration: 1s;
+ transition-duration: 2s;
 }
 .nav-menu ul a:hover{
   color: #ffffff;
@@ -104,27 +102,41 @@ body{
 }
 
 .home-text{
-  margin: 130px 30px;
+  margin: 100px 30px;
   position: relative;
   padding: 20px;
 }
 .welcome-text{
-  font-size:30px;
+  font-size:40px;
   letter-spacing: 3px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffffff;
+  color: #e7e6e6;
   
 }
 .home-text  p{
   margin: 50px 0px 20px;
-  font-size: 18px;
-  color: #c9c9c9;
+  font-size: 25px;
+  color: #e2e2e2;
   text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .home-text span{
   color:#ff3d02;
   font-family: cursive;
+  animation: floatText 3s ease-in-out infinite;
+}
+
+@keyframes floatText{
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 .home-text .btn{
   background-color:rgb(84, 108, 245);
@@ -175,7 +187,6 @@ body{
   height: 300px;
   background-color:var(--light-color);
   margin: 30px;
-  box-shadow: 2px 2px 12px;
   padding: 0px 10px 10px;
   position: relative;
   transition: 1s;
@@ -219,7 +230,6 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 1px #5a5a5ad0;
 }
 .category{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -232,22 +242,27 @@ body{
   justify-content: space-between;
   padding: 20px;
   width: 100%;
+  overflow-x: scroll;
   
 }
+.mini-portfolio-group::-webkit-scrollbar{
+    display: none;
+    }
  .mini-portfolio-group a{
   text-decoration: none;
   color: #181818e3;
   
 }
 .mini-portfolio{
-  width: 250px;
+  width: 230px;
   padding: 10px;
   display:flex;
   justify-content: space-between;
   border: none;
-  box-shadow: 2px 2px 4px rgba(39, 39, 39, 0.795);
   background-color:var(--light-color);
   transition: 0.5s ease-out;
+  margin-right: 90px;
+
 }
 .mini-portfolio:hover{
   transform: scale(1.1);
@@ -255,7 +270,7 @@ body{
 .mini-portfolio img{
   width: 100px;
   height: 130px;
-  margin-right: 7px;
+  margin-right: 0px;
 }
 .mini-portfolio .text{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -292,7 +307,11 @@ text-align: left;
   font-family:Arial, Helvetica, sans-serif, Georgia, Times, 'Times New Roman', serif;
   color: #818181;
 }
+.professional-info .multiple-text{
+  color:  var(--main-color);
+  font-size: 18px;
 
+}
 .skills-info{
   width:100%;
   margin: 20px 0px 40px;
@@ -491,7 +510,7 @@ background-color:var(--light-color);
 form .second-col .btn{
   width: 100px;
   background-color:rgb(40, 140, 255);
- color:rgb(255, 255, 255);
+  color:rgb(255, 255, 255);
   padding: 10px;
   border-radius: 5px;
   font-size: 12px;
@@ -500,6 +519,8 @@ form .second-col .btn{
   cursor: pointer;
   letter-spacing: 1px;
   transition: 1s;
+
+  animation: floatText 3s ease-in-out infinite;
 }
 form .second-col .btn:hover{
   background-color:var(--main-color); 
@@ -619,9 +640,8 @@ footer a i:active{
   position: absolute;
   top:20px;
   left: 30px;
-  transition:  all  0.5s;
   z-index: 10;
-  transition: 0.2s;
+  transition: 0.5s;
  }
 
  .mode span{
@@ -650,7 +670,7 @@ footer a i:active{
   width:100%;
   height:3px;
   margin: 5px 0px 3px;
-  transition: all 0.3s ease-in-out; 
+  transition: all 0.5s ease-in-out; 
   background-color:var(--main-color);
   border-radius: 5px;
 } 
@@ -695,7 +715,7 @@ footer a i:active{
    .nav-menu.active{
     right: 0;
   }
-    .nav ul li{
+    .nav ul a li{
     font-weight: bold;
     font-size: 20px;
     padding:30px;
@@ -703,6 +723,7 @@ footer a i:active{
     text-align: center;
     display:block;
     color:rgb(59, 159, 241);
+    transition: 2s ease;
   }
   .nav-menu ul a{
     width: 100%;
@@ -728,14 +749,15 @@ footer a i:active{
   }
   .home-text p{
     color: hsla(0, 0%, 93%, 0.836);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     font-weight: 600;
     display: block;
   }
   .welcome-text{
     text-align: left;
+    font-size:30px;
   }
+
   .welcome-text span{
  display:block;
  font-weight: 600;
@@ -766,7 +788,6 @@ footer a i:active{
       height: 270px;
       background-color:var(--light-color);
       margin: 30px;
-      box-shadow: 0px 0px 0px;
       padding: 0px 10px 10px;
       position: relative;
       transition: 1s;
@@ -775,16 +796,12 @@ footer a i:active{
       padding: 30px 0px 30px;
      
     }
-.mini-portfolio-group{
-  overflow-x: scroll;
-}
+
 .mini-portfolio{
   margin-right: 65px;
   box-shadow: 0px 0px 0px;
 }
-.mini-portfolio-group::-webkit-scrollbar{
-  display: none;
-  }
+
   .about{
     padding: 10px;
   }
@@ -876,7 +893,7 @@ footer a i:active{
     font-size: 10px;
   }
   footer{
-    padding: 0px 5px 0px;
+    padding: 0px 7px 0px;
     height: 30px;
   }
 
